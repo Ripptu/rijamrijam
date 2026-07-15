@@ -132,7 +132,7 @@ const testimonials = [
                 <img
                   key={`set1-${i}`}
                   src={img.url}
-                  className={`${img.className} object-cover flex-shrink-0`}
+                  className={`${img.className} object-cover flex-shrink-0 rounded-2xl`}
                   alt={`Cabin interior ${i + 1}`}
                 />
               ))}
@@ -142,7 +142,7 @@ const testimonials = [
                 <img
                   key={`set2-${i}`}
                   src={img.url}
-                  className={`${img.className} object-cover flex-shrink-0`}
+                  className={`${img.className} object-cover flex-shrink-0 rounded-2xl`}
                   alt={`Cabin interior ${i + 1}`}
                 />
               ))}
@@ -161,9 +161,13 @@ const testimonials = [
 
       {/* About Me Section */}
       <section id="ueber-mich" className="bg-black text-white py-24 px-4 md:px-8 w-full border-t border-white/10">
-        <div className="max-w-[1400px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-24 items-center">
-          <div className="order-2 md:order-1 relative">
-            <img src="https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_2zg6kRsQgLvpBAc5mmGVtMaqZi0%2Fhf_20260713_185214_e9985fee-b8a1-42e1-8489-b316bdf17a5c.png&w=1280&q=85" alt="Rijam Portrait" className="w-full h-auto max-h-[700px] object-cover rounded-sm opacity-90" />
+        <div className="max-w-[1100px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
+          <div className="order-2 md:order-1 relative flex justify-center md:justify-start">
+            <img 
+              src="https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_2zg6kRsQgLvpBAc5mmGVtMaqZi0%2Fhf_20260713_185214_e9985fee-b8a1-42e1-8489-b316bdf17a5c.png&w=1280&q=85" 
+              alt="Rijam Portrait" 
+              className="w-full max-w-[420px] h-auto max-h-[550px] object-cover rounded-2xl opacity-90 mx-auto md:ml-0" 
+            />
           </div>
           <div className="order-1 md:order-2 flex flex-col items-start gap-6">
             <h2 className="text-3xl md:text-[44px] font-medium tracking-tight leading-tight">Hallo, ich bin Rijam.</h2>
