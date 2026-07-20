@@ -34,7 +34,7 @@ const testimonials = [
   const thirdColumn = testimonials.slice(6, 9);
 
   return (
-    <div className="bg-black font-sans text-white w-full overflow-x-hidden min-h-screen">
+    <div className="bg-[#14110d] font-sans text-white w-full overflow-x-hidden min-h-screen">
       {/* Hero Section */}
       <div className="relative w-full h-screen overflow-hidden flex flex-col">
         {/* Background Image with Zoom Out Animation */}
@@ -51,9 +51,9 @@ const testimonials = [
           }}
         />
         {/* Vignette Overlay */}
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_0%,rgba(0,0,0,0.8)_120%)] pointer-events-none" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_0%,rgba(20,17,13,0.8)_120%)] pointer-events-none" />
         {/* Bottom Fade to Black Gradient */}
-        <div className="absolute bottom-0 w-full h-[60%] bg-gradient-to-t from-black via-black/80 to-transparent" />
+        <div className="absolute bottom-0 w-full h-[60%] bg-gradient-to-t from-[#14110d] via-[#14110d]/80 to-transparent" />
       </motion.div>
 
       {/* Top Navigation - Just Burger Menu */}
@@ -113,7 +113,7 @@ const testimonials = [
                     element.scrollIntoView({ behavior: "smooth" });
                   }
                 }}
-                className="bg-white text-black px-8 py-4 rounded-full text-sm font-semibold hover:bg-gray-100 transition-colors shadow-lg active:scale-95 cursor-pointer"
+                className="bg-white text-[#14110d] px-8 py-4 rounded-full text-sm font-semibold hover:bg-gray-100 transition-colors shadow-lg active:scale-95 cursor-pointer"
               >
                 Erstgespräch vereinbaren
               </button>
@@ -132,7 +132,7 @@ const testimonials = [
                 <img
                   key={`set1-${i}`}
                   src={img.url}
-                  className={`${img.className} object-cover flex-shrink-0 rounded-2xl`}
+                  className={`${img.className} object-cover flex-shrink-0 rounded-[28px]`}
                   alt={`Cabin interior ${i + 1}`}
                 />
               ))}
@@ -142,7 +142,7 @@ const testimonials = [
                 <img
                   key={`set2-${i}`}
                   src={img.url}
-                  className={`${img.className} object-cover flex-shrink-0 rounded-2xl`}
+                  className={`${img.className} object-cover flex-shrink-0 rounded-[28px]`}
                   alt={`Cabin interior ${i + 1}`}
                 />
               ))}
@@ -154,19 +154,19 @@ const testimonials = [
       {/* Center text section */}
       <section id="philosophie" className="py-16 px-8 text-center max-w-2xl mx-auto flex flex-col items-center gap-6">
         <h2 className="text-3xl md:text-[40px] font-medium tracking-tight">Meine Philosophie: Mit Herz und Empathie für dich da.</h2>
-        <p className="text-gray-400/80 text-sm md:text-base leading-relaxed max-w-[420px]">
+        <p className="text-[#6B7280] text-sm md:text-base leading-relaxed max-w-[420px]">
           Ich biete dir einen geschützten Raum, um Antworten zu finden und Trauer zu bewältigen.<br className="hidden md:block" /> Mit meiner langjährigen Erfahrung als Medium begleite ich dich auf deinem Weg zu innerem Frieden.
         </p>
       </section>
 
       {/* About Me Section */}
-      <section id="ueber-mich" className="bg-black text-white py-24 px-4 md:px-8 w-full border-t border-white/10">
+      <section id="ueber-mich" className="bg-[#14110d] text-white py-24 px-4 md:px-8 w-full border-t border-white/10">
         <div className="max-w-[1100px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
           <div className="order-2 md:order-1 relative flex justify-center md:justify-start">
             <img 
               src="https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_2zg6kRsQgLvpBAc5mmGVtMaqZi0%2Fhf_20260713_185214_e9985fee-b8a1-42e1-8489-b316bdf17a5c.png&w=1280&q=85" 
               alt="Rijam Portrait" 
-              className="w-full max-w-[420px] h-auto max-h-[550px] object-cover rounded-2xl opacity-90 mx-auto md:ml-0" 
+              className="w-full max-w-[420px] h-auto max-h-[550px] object-cover rounded-[28px] opacity-90 mx-auto md:ml-0" 
             />
           </div>
           <div className="order-1 md:order-2 flex flex-col items-start gap-6">
@@ -187,68 +187,68 @@ const testimonials = [
       </section>
 
       {/* Contact Section */}
-      <section id="kontakt" className="bg-white text-black py-24 md:py-32 px-4 md:px-8 w-full border-t border-black/5">
+      <section id="kontakt" className="bg-white text-[#14110d] py-24 md:py-32 px-4 md:px-8 w-full border-t border-[#E5E7EB]">
         <div className="max-w-[1350px] mx-auto flex flex-col items-center text-center">
-          <h2 className="text-3xl md:text-[44px] font-display font-medium tracking-tight leading-tight mb-4">Lass uns in Kontakt treten.</h2>
-          <p className="text-gray-500 text-base md:text-lg max-w-2xl mb-16">
+          <h2 className="text-3xl md:text-[44px] font-medium tracking-tight leading-tight mb-4">Lass uns in Kontakt treten.</h2>
+          <p className="text-[#6B7280] text-base md:text-lg max-w-2xl mb-16">
             Ob du Fragen hast oder einen Termin vereinbaren möchtest – ich bin über verschiedene Kanäle für dich erreichbar. Wähle den Weg, der dir am liebsten ist.
           </p>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 w-full">
-            <a href="https://wa.me/4915226190100?text=Hallo%20Rijam%2C%20ich%20interessiere%20mich%20f%C3%BCr%20eine%20spirituelle%20Beratung." target="_blank" rel="noopener noreferrer" className="flex flex-col items-center justify-center p-10 bg-gray-50 rounded-[2rem] border border-black/5 hover:bg-gray-100 transition-colors group cursor-pointer">
-              <div className="w-14 h-14 bg-white rounded-full flex items-center justify-center mb-6 shadow-sm border border-black/5 group-hover:scale-110 transition-transform duration-300">
+            <a href="https://wa.me/4915226190100?text=Hallo%20Rijam%2C%20ich%20interessiere%20mich%20f%C3%BCr%20eine%20spirituelle%20Beratung." target="_blank" rel="noopener noreferrer" className="flex flex-col items-center justify-center p-10 bg-[#E5E7EB] rounded-[32px] border border-[#E5E7EB] hover:bg-gray-200 transition-colors group cursor-pointer">
+              <div className="w-14 h-14 bg-white rounded-[32px] flex items-center justify-center mb-6 shadow-sm border border-[#E5E7EB] group-hover:scale-110 transition-transform duration-300">
                 <MessageCircle className="w-6 h-6 text-[#25D366]" strokeWidth={1.5} />
               </div>
               <h3 className="text-lg font-medium mb-2">WhatsApp</h3>
-              <span className="text-gray-500 text-sm">Direkt schreiben</span>
+              <span className="text-[#6B7280] text-sm">Direkt schreiben</span>
             </a>
             
-            <a href="https://t.me/RijamMedium" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center justify-center p-10 bg-gray-50 rounded-[2rem] border border-black/5 hover:bg-gray-100 transition-colors group cursor-pointer">
-              <div className="w-14 h-14 bg-white rounded-full flex items-center justify-center mb-6 shadow-sm border border-black/5 group-hover:scale-110 transition-transform duration-300">
+            <a href="https://t.me/RijamMedium" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center justify-center p-10 bg-[#E5E7EB] rounded-[32px] border border-[#E5E7EB] hover:bg-gray-200 transition-colors group cursor-pointer">
+              <div className="w-14 h-14 bg-white rounded-[32px] flex items-center justify-center mb-6 shadow-sm border border-[#E5E7EB] group-hover:scale-110 transition-transform duration-300">
                 <Send className="w-6 h-6 text-[#229ED9] ml-[-2px] mt-[2px]" strokeWidth={1.5} />
               </div>
               <h3 className="text-lg font-medium mb-2">Telegram</h3>
-              <span className="text-gray-500 text-sm">Schnell & sicher</span>
+              <span className="text-[#6B7280] text-sm">Schnell & sicher</span>
             </a>
 
-            <a href="mailto:kontakt@rijam.de?subject=Anfrage%20spirituelle%20Beratung" className="flex flex-col items-center justify-center p-10 bg-gray-50 rounded-[2rem] border border-black/5 hover:bg-gray-100 transition-colors group cursor-pointer">
-              <div className="w-14 h-14 bg-white rounded-full flex items-center justify-center mb-6 shadow-sm border border-black/5 group-hover:scale-110 transition-transform duration-300">
-                <Mail className="w-6 h-6 text-black" strokeWidth={1.5} />
+            <a href="mailto:kontakt@rijam.de?subject=Anfrage%20spirituelle%20Beratung" className="flex flex-col items-center justify-center p-10 bg-[#E5E7EB] rounded-[32px] border border-[#E5E7EB] hover:bg-gray-200 transition-colors group cursor-pointer">
+              <div className="w-14 h-14 bg-white rounded-[32px] flex items-center justify-center mb-6 shadow-sm border border-[#E5E7EB] group-hover:scale-110 transition-transform duration-300">
+                <Mail className="w-6 h-6 text-[#14110d]" strokeWidth={1.5} />
               </div>
               <h3 className="text-lg font-medium mb-2">E-Mail</h3>
-              <span className="text-gray-500 text-sm">Für ausführliche Anfragen</span>
+              <span className="text-[#6B7280] text-sm">Für ausführliche Anfragen</span>
             </a>
 
-            <a href="tel:+4915226190100" className="flex flex-col items-center justify-center p-10 bg-gray-50 rounded-[2rem] border border-black/5 hover:bg-gray-100 transition-colors group cursor-pointer">
-              <div className="w-14 h-14 bg-white rounded-full flex items-center justify-center mb-6 shadow-sm border border-black/5 group-hover:scale-110 transition-transform duration-300">
-                <Phone className="w-6 h-6 text-black" strokeWidth={1.5} />
+            <a href="tel:+4915226190100" className="flex flex-col items-center justify-center p-10 bg-[#E5E7EB] rounded-[32px] border border-[#E5E7EB] hover:bg-gray-200 transition-colors group cursor-pointer">
+              <div className="w-14 h-14 bg-white rounded-[32px] flex items-center justify-center mb-6 shadow-sm border border-[#E5E7EB] group-hover:scale-110 transition-transform duration-300">
+                <Phone className="w-6 h-6 text-[#14110d]" strokeWidth={1.5} />
               </div>
               <h3 className="text-lg font-medium mb-2">Telefon</h3>
-              <span className="text-gray-500 text-sm">Persönliches Gespräch</span>
+              <span className="text-[#6B7280] text-sm">Persönliches Gespräch</span>
             </a>
           </div>
         </div>
       </section>
 
       {/* Services Bento Grid Section */}
-      <section id="leistungen" className="bg-white text-black pb-24 px-4 md:px-8 w-full border-t border-black/5 pt-24">
+      <section id="leistungen" className="bg-white text-[#14110d] pb-24 px-4 md:px-8 w-full border-t border-[#E5E7EB] pt-24">
         <div className="max-w-[1350px] mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 auto-rows-[220px]">
             {[
-              { title: "Partnerrückführung", text: "Die Partnerrückführung ist ein kraftvoller Prozess, der dir hilft, verloren geglaubte Beziehungen wiederherzustellen. Ich unterstütze dich dabei, die emotionalen und energetischen Verbindungen zu deinem Seelenpartner zu stärken, damit ihr wieder zueinander findet. Mit meiner einfühlsamen Anleitung erforschen wir gemeinsam, wie alte Muster durchbrochen werden können, um eine liebevolle und harmonische Wiedervereinigung zu ermöglichen.", span: "md:col-span-2 md:row-span-2", bg: "bg-gray-100 text-black" },
-              { title: "Kartenlegen", text: "Beim Kartenlegen erhalte ich wertvolle Einblicke in deine Lebenssituation und die Herausforderungen, vor denen du stehst. Die Karten bieten eine klare Perspektive auf deine Fragen und helfen dir, Entscheidungen mit mehr Klarheit zu treffen. Ich begleite dich durch die Deutung der Karten und enthülle die Botschaften, die das Universum für dich bereithält. Lass uns gemeinsam die Antworten finden, die du suchst.", span: "md:col-span-1 md:row-span-1", bg: "bg-[#181818] text-white" },
-              { title: "Blockadenauflösung", text: "Die Blockadenauflösung ist ein entscheidender Schritt, um emotionale und energetische Hindernisse in deinem Leben zu beseitigen. Ich helfe dir, die Ursachen dieser Blockaden zu identifizieren und zu transformieren, damit du wieder frei und unbeschwert leben kannst. Mit gezielten Methoden unterstütze ich dich, um alte Muster loszulassen und Raum für neues Wachstum und positive Veränderungen zu schaffen.", span: "md:col-span-1 md:row-span-1", bg: "bg-gray-200 text-black" },
-              { title: "Partnerzusammenführung", text: "Die Partnerzusammenführung zielt darauf ab, dich mit deinem Wunschpartner zusammenzubringen und eine glückliche, harmonische Beziehung zu ermöglichen. Ich arbeite mit verschiedenen spirituellen Techniken, um die energetischen Blockaden zu identifizieren, die zwischen euch stehen könnten. Gemeinsam schaffen wir die Voraussetzungen für eine tiefe Verbindung und eine erfüllte Partnerschaft, die auf Liebe und Vertrauen basiert.", span: "md:col-span-1 md:row-span-1", bg: "bg-gray-100 text-black" },
-              { title: "Handlesung", text: "Das Handlesen ist eine alte Kunst, die dir wertvolle Informationen über deine Lebenslinie und deine zukünftigen Möglichkeiten bietet. Durch die Analyse deiner Handlinien und -merkmale erkenne ich wichtige Aspekte deiner Persönlichkeit und deines Lebensweges. Diese Einblicke können dir helfen, besser zu verstehen, wo deine Stärken und Herausforderungen liegen und wie du dein volles Potenzial entfalten kannst.", span: "md:col-span-2 md:row-span-1", bg: "bg-gray-100 text-black" }
+              { title: "Partnerrückführung", text: "Die Partnerrückführung ist ein kraftvoller Prozess, der dir hilft, verloren geglaubte Beziehungen wiederherzustellen. Ich unterstütze dich dabei, die emotionalen und energetischen Verbindungen zu deinem Seelenpartner zu stärken, damit ihr wieder zueinander findet. Mit meiner einfühlsamen Anleitung erforschen wir gemeinsam, wie alte Muster durchbrochen werden können, um eine liebevolle und harmonische Wiedervereinigung zu ermöglichen.", span: "md:col-span-2 md:row-span-2", bg: "bg-[#E5E7EB] text-[#14110d]" },
+              { title: "Kartenlegen", text: "Beim Kartenlegen erhalte ich wertvolle Einblicke in deine Lebenssituation und die Herausforderungen, vor denen du stehst. Die Karten bieten eine klare Perspektive auf deine Fragen und helfen dir, Entscheidungen mit mehr Klarheit zu treffen. Ich begleite dich durch die Deutung der Karten und enthülle die Botschaften, die das Universum für dich bereithält. Lass uns gemeinsam die Antworten finden, die du suchst.", span: "md:col-span-1 md:row-span-1", bg: "bg-[#14110d] text-white" },
+              { title: "Blockadenauflösung", text: "Die Blockadenauflösung ist ein entscheidender Schritt, um emotionale und energetische Hindernisse in deinem Leben zu beseitigen. Ich helfe dir, die Ursachen dieser Blockaden zu identifizieren und zu transformieren, damit du wieder frei und unbeschwert leben kannst. Mit gezielten Methoden unterstütze ich dich, um alte Muster loszulassen und Raum für neues Wachstum und positive Veränderungen zu schaffen.", span: "md:col-span-1 md:row-span-1", bg: "bg-[#E5E7EB] text-[#14110d]" },
+              { title: "Partnerzusammenführung", text: "Die Partnerzusammenführung zielt darauf ab, dich mit deinem Wunschpartner zusammenzubringen und eine glückliche, harmonische Beziehung zu ermöglichen. Ich arbeite mit verschiedenen spirituellen Techniken, um die energetischen Blockaden zu identifizieren, die zwischen euch stehen könnten. Gemeinsam schaffen wir die Voraussetzungen für eine tiefe Verbindung und eine erfüllte Partnerschaft, die auf Liebe und Vertrauen basiert.", span: "md:col-span-1 md:row-span-1", bg: "bg-[#E5E7EB] text-[#14110d]" },
+              { title: "Handlesung", text: "Das Handlesen ist eine alte Kunst, die dir wertvolle Informationen über deine Lebenslinie und deine zukünftigen Möglichkeiten bietet. Durch die Analyse deiner Handlinien und -merkmale erkenne ich wichtige Aspekte deiner Persönlichkeit und deines Lebensweges. Diese Einblicke können dir helfen, besser zu verstehen, wo deine Stärken und Herausforderungen liegen und wie du dein volles Potenzial entfalten kannst.", span: "md:col-span-2 md:row-span-1", bg: "bg-[#E5E7EB] text-[#14110d]" }
             ].map((svc) => (
               <motion.div 
                 layoutId={`card-${svc.title}`}
                 key={svc.title}
                 onClick={() => setSelectedService(svc)}
-                className={`${svc.bg} ${svc.span} p-6 sm:p-8 lg:p-10 rounded-3xl cursor-pointer hover:scale-[1.02] transition-transform duration-300 flex flex-col justify-end overflow-hidden relative group`}
+                className={`${svc.bg} ${svc.span} p-6 sm:p-8 lg:p-10 rounded-[32px] cursor-pointer hover:scale-[1.02] transition-transform duration-300 flex flex-col justify-end overflow-hidden relative group`}
               >
                 <div className="absolute inset-0 bg-black/5 opacity-0 group-hover:opacity-100 transition-opacity" />
-                <motion.h3 layoutId={`title-${svc.title}`} className="text-xl sm:text-2xl lg:text-3xl font-display font-medium relative z-10 tracking-tight leading-tight">{svc.title}</motion.h3>
+                <motion.h3 layoutId={`title-${svc.title}`} className="text-xl sm:text-2xl lg:text-3xl font-medium relative z-10 tracking-tight leading-tight">{svc.title}</motion.h3>
                 <div className="mt-4 flex items-center gap-2 text-sm font-medium opacity-60 group-hover:opacity-100 transition-opacity relative z-10">
                   <span>Mehr erfahren</span>
                   <ArrowRight className="w-4 h-4" />
@@ -260,7 +260,7 @@ const testimonials = [
       </section>
 
       {/* Testimonials Section */}
-      <section className="bg-white py-24 px-4 md:px-8 w-full border-t border-black/5 relative overflow-hidden">
+      <section className="bg-white py-24 px-4 md:px-8 w-full border-t border-[#E5E7EB] relative overflow-hidden">
         <div className="container z-10 mx-auto">
           <div className="flex justify-center gap-6 mt-16 md:mt-24 [mask-image:linear-gradient(to_bottom,transparent,black_25%,black_75%,transparent)] max-h-[740px] overflow-hidden">
             <TestimonialsColumn testimonials={firstColumn} duration={15} />
@@ -271,7 +271,7 @@ const testimonials = [
       </section>
 
       {/* FAQ Section */}
-      <section className="bg-gray-100 text-black py-24 px-4 md:px-8 w-full border-t border-black/5">
+      <section className="bg-white text-[#14110d] py-24 px-4 md:px-8 w-full border-t border-[#E5E7EB]">
         <div className="max-w-[800px] mx-auto flex flex-col gap-8">
           <div className="text-center mb-8">
             <h2 className="text-3xl md:text-[40px] font-medium tracking-tight">Häufig gestellte Fragen</h2>
@@ -283,7 +283,7 @@ const testimonials = [
               { q: "Bietest du Sitzungen auch online an?", a: "Ja, da ich in Bulgarien lebe, biete ich meine Sitzungen weltweit per Video-Call an. Die Energie und Qualität des Kontakts ist dabei genauso intensiv wie bei einem Treffen vor Ort." },
               { q: "Kann ein Jenseitskontakt garantiert werden?", a: "Ein Kontakt mit der geistigen Welt lässt sich nicht erzwingen, jedoch ist meine Erfahrung sehr positiv. Die geistige Welt entscheidet, wer sich meldet und welche Botschaften gerade wichtig für dich sind." }
             ].map((faq, idx) => (
-              <div key={idx} className="bg-white rounded-2xl shadow-sm border border-black/5 overflow-hidden">
+              <div key={idx} className="bg-[#E5E7EB] rounded-[32px] shadow-sm overflow-hidden">
                 <button 
                   onClick={() => setOpenFaq(openFaq === idx ? null : idx)}
                   className="w-full flex justify-between items-center p-6 md:p-8 font-medium text-lg md:text-xl text-left cursor-pointer outline-none"
@@ -373,11 +373,11 @@ const testimonials = [
             />
             <motion.div 
               layoutId={`card-${selectedService.title}`}
-              className="bg-white text-black p-8 md:p-12 rounded-[2rem] w-full max-w-3xl relative z-10 overflow-hidden shadow-2xl"
+              className="bg-white text-[#14110d] p-8 md:p-12 rounded-[32px] w-full max-w-3xl relative z-10 overflow-hidden shadow-2xl"
             >
               <button 
                 onClick={() => setSelectedService(null)}
-                className="absolute top-6 right-6 p-2 bg-gray-100 hover:bg-gray-200 rounded-full transition-colors"
+                className="absolute top-6 right-6 p-2 bg-[#E5E7EB] hover:bg-gray-200 rounded-full transition-colors"
               >
                 <X className="w-6 h-6" />
               </button>
@@ -388,7 +388,7 @@ const testimonials = [
                 initial={{ opacity: 0, y: 20 }} 
                 animate={{ opacity: 1, y: 0 }} 
                 transition={{ delay: 0.1, duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
-                className="text-gray-600 leading-relaxed text-lg md:text-xl"
+                className="text-[#6B7280] leading-relaxed text-lg md:text-xl"
               >
                 {selectedService.text}
               </motion.p>
@@ -413,11 +413,11 @@ const testimonials = [
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.95, y: 10 }}
               transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
-              className="bg-[#181818] text-white p-8 md:p-12 rounded-[2rem] w-full max-w-2xl relative z-10 overflow-y-auto max-h-[85vh] border border-white/10 shadow-2xl"
+              className="bg-[#14110d] text-white p-8 md:p-12 rounded-[32px] w-full max-w-2xl relative z-10 overflow-y-auto max-h-[85vh] shadow-2xl"
             >
               <button 
                 onClick={() => setModalType(null)}
-                className="absolute top-6 right-6 p-2 bg-white/5 hover:bg-white/10 text-white rounded-full transition-colors cursor-pointer"
+                className="absolute top-6 right-6 p-2 bg-white/10 hover:bg-white/20 text-white rounded-full transition-colors cursor-pointer"
               >
                 <X className="w-6 h-6" />
               </button>
@@ -440,7 +440,7 @@ const testimonials = [
                     </p>
                     <p className="font-semibold text-white mt-6">Streitschlichtung</p>
                     <p>
-                      Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: <a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="noopener noreferrer" className="text-[#e3c48f] hover:underline">https://ec.europa.eu/consumers/odr</a>.<br />
+                      Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: <a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="noopener noreferrer" className="text-[#E0E7FF] hover:underline">https://ec.europa.eu/consumers/odr</a>.<br />
                       Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
                     </p>
                   </div>
@@ -479,7 +479,7 @@ const testimonials = [
                       Diese Allgemeinen Geschäftsbedingungen gelten für alle spirituellen Beratungen, Jenseitskontakte, Aura-Analysen und sonstigen medialen Dienstleistungen von Rijam.
                     </p>
                     <p className="font-semibold text-white mt-6">2. Wichtiger rechtlicher Hinweis & Haftungsausschluss</p>
-                    <p className="text-[#e3c48f] font-medium">
+                    <p className="text-[#E0E7FF] font-medium">
                       Die angebotenen Leistungen sind rein spiritueller Natur und dienen der persönlichen Orientierung und Selbsterfahrung. Sie ersetzen in keinem Fall eine medizinische, psychiatrische, psychotherapeutische oder rechtliche Beratung, Diagnose oder Behandlung durch einen approbierten Arzt oder Heilpraktiker.
                     </p>
                     <p>
